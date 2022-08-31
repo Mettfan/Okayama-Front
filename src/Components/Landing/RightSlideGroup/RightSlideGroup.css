@@ -1,0 +1,106 @@
+.landingContainer{
+    /* position: relative;
+    top: 100px; */
+    width: fit-content;
+    background-color: #fcfdff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.karateCover{
+    object-fit: cover;
+    /* width: 20%; */
+    /* height: 200px; */
+    margin: 10px;
+    animation-name: decreaseImage;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    cursor:pointer;
+    
+}
+.karateCover:hover{
+    object-fit: cover;
+    animation-name: growImage;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    /* height: 100%; */
+    
+    
+}
+.leyendaCover{
+    display: flex;
+    position: inherit;
+    top: 100px;
+    color: yellow;
+    background-color: darkblue;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: nowrap;
+    cursor:pointer;
+    /* width: 600px; */
+    
+    
+    /* position: fixed; */
+    /* background-color: red; */
+    /* left: 50%; */
+    
+}
+.bannerContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 10px;
+}
+.professorLegLeft{
+    width:15%;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+.professorLegRight{
+    width:15%;
+    object-fit: cover;
+}
+@keyframes growImage {
+    100%{
+        width: 50%;
+    }
+}
+@keyframes decreaseImage {
+    0%{
+        width: 50%
+    }
+    100%{
+        width: 35%;
+    }
+}
+@keyframes decreaseImageMobile {
+    0%{
+        width:50% ;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .karateCover{
+        width: 100%;
+        animation-name: decreaseImageMobile;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .karateCover:hover{
+        width: 100%;
+        margin: 10px;
+    }
+    .landingContainer{
+        justify-content: flex-end;
+    }
+    .leyendaCover{
+        position: inherit;
+        /* position: relative; */
+    }
+}

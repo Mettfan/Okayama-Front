@@ -1,0 +1,112 @@
+
+.teamOutstandingLandingContainer{
+    background-color: black;
+    padding: 10px;
+    /* border-radius: 100; */
+}
+.teamOutstandingLandingImage{
+    
+    width: 65%;
+    object-fit: cover;
+    animation-name: jumping;
+    animation-duration: 1.5s;
+    border-radius: 100;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.teamOutstandingLandingImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: justifyAtTheStart;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    
+    /* background-color: red; */
+}
+.TOinput{
+    opacity: 0;
+    width: 600PX;
+    height: 100PX;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    font-size: xx-large;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+#TOinputtext{
+    opacity: 0;
+    transform: translate(-50px);
+    color: white;
+    font-size: xx-large;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.leyendTOContainer{
+    display: flex;
+    flex-direction: column;
+}
+.inputContainerTO{
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    color: white;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.leyendDescription{
+    font-size: smaller;
+    
+}
+@keyframes jumping {
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0, 20px);
+        
+    }
+    100%{
+        transform: translate(0, 0px);
+    }   
+}
+@keyframes justifyAtTheStart {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        
+        transform:  scale(0.5);
+        /* transform: scale(0.5, 0.5); */
+    }
+    
+}
+@keyframes appear {
+    100%{
+        opacity: 1;
+    }   
+}
+@keyframes slideIn {
+    0%{
+        opacity: 0;
+        transform: translate(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}

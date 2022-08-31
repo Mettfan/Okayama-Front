@@ -1,0 +1,50 @@
+.professorLegUpLeft{
+    position: inherit;
+    width: 10%;
+    
+}
+
+.imgCarousel{
+    display: flex;
+    /* position:sticky; */
+    /* width: 200px; */
+    justify-content: center;
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+.slide{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    background-color: transparent;
+    padding: 10px;
+}
+.slideContainer{
+    position: absolute;
+    right: 25%;
+    background-color: transparent;
+    width: 50%;
+    filter: drop-shadow( 2px 2px 2px gray);
+}
+.slideContainer:hover{
+
+    filter: drop-shadow( 2px 2px 2px darkblue);
+}
+.slideContainer:hover{
+}
+.slidesGroupContainer{
+    margin-top: 450px;
+}
+@media (max-width: 700px){
+    .professorLegUpLeft{
+        visibility: hidden;
+    }
+    .slidesGroupContainer{
+        margin-top: 600px;
+    }
+}
