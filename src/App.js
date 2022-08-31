@@ -12,6 +12,8 @@ import Inscription from './Components/Inscripcion/Inscription';
 import LocationDojos from './Components/LocationDojos/LocationDojos';
 import TeamOutstanding from './Components/NavBar/TeamOutstanding.js/TeamOutstanding';
 import TeamOutstandingLanding from './Components/TeamOutstandingLanding/TeamOutstandingLanding.js';
+import UncompletePage from './Components/UncompletePage/UncompletePage';
+import Admin from './Components/Admin/Admin';
 
 function App() {
   return (
@@ -20,14 +22,15 @@ function App() {
       <NavBar/>
       <Routes>
         <Route path='/' element={<Landing/>} />
-        <Route path='/Conocenos' element={<About/>} />
-        <Route path='/Productos' element={<Products/>} />
-        <Route path='/Inscripcion' element={<Inscription/>} />
-        <Route path='/login' element={<Login/>} />
-        <Route path='/register' element={<Register/>} />
+        {/* <Route path='/Conocenos' element={<About/>} /> */}
+        {/* <Route path='/Productos' element={<Products/>} /> */}
+        {/* <Route path='/Inscripcion' element={<Inscription/>} /> */}
+        {/* <Route path='/login' element={<Login/>} />  */}
+        {/* <Route path='/register' element={<Register/>} /> */}
         <Route path='/location' element={<LocationDojos/>} />
         <Route path='/teamOutStanding' element={<TeamOutstandingLanding/>} />
-
+        <Route path='/admin' element={<Admin/>} />
+        <Route path='*' exact={true} element={<UncompletePage></UncompletePage>}></Route>
 
       </Routes>
       <Footer/>
