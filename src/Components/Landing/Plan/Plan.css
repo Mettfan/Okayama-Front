@@ -1,0 +1,48 @@
+.planContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(223, 223, 27, 0.827);
+    padding: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 250px;
+    margin: 5px;
+}
+.planTitle{
+    font-size: xx-large;
+    color: white;
+    margin-bottom: 15px;
+    background-color: rgb(11, 11, 111);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.planDivider{
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.planDescription{
+    padding: 10px;
+    line-height: 25px ;
+
+}
+.planButton{
+    padding: 10px;
+    background-color: gold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.planButton:hover{
+    background-color: rgb(11, 11, 111) ;
+    color: white;
+}
+.planInfo{
+    padding: 10px;
+    line-height: 25px ;
+}

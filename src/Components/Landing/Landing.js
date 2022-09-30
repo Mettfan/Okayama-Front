@@ -28,11 +28,13 @@ export default function Landing (){
         <Carousel></Carousel>
 
     </div>
+
     <div className="slidesGroupContainer">
+        {/* <LeftSlideGroup img={cintasKarate} text={<Carousel></Carousel>}></LeftSlideGroup> */}
         <RightSlideGroup leftimage={professorLeg} rightimage={professorLeg} img={okayamaLogo} text={'¿Quienes Somos?'} goto={'Conocenos'}></RightSlideGroup>
         <LeftSlideGroup img={cintasKarate} text={'Conoce los Grados'}></LeftSlideGroup>
         <RightSlideGroup img={coverKarate} text={'Únete a Nuestro Equipo de Instructores'} ></RightSlideGroup>
-
+        
     </div>
 
     </>)

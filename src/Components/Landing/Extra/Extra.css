@@ -1,0 +1,12 @@
+.extraText{
+
+}
+.extraImage{
+    width: 200px;
+}
+.extraContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

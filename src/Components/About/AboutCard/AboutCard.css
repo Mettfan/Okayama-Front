@@ -1,0 +1,16 @@
+.aboutCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: aliceblue;
+}
+.aboutCardText{
+    font-size: xx-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.aboutCardImage{
+    width: 50%;
+}

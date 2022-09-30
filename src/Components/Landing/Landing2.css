@@ -1,0 +1,27 @@
+.coverContainerL2{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.coverImgL2{
+    width: 100%;
+}
+.plansContainerL2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.gradesContainer{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+}
+.featuresContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

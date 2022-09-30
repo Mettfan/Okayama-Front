@@ -6,9 +6,11 @@ import okayamaLogo from "../../../Assets/OkayamaLogo.png"
 import professorLeg from '../../../Assets/professorLegUp.jpg'
 import cintasKarate from '../../../Assets/Cintas.jpg'
 import cintaNegra from '../../../Assets/cintapng.png'
+import { useNavigate } from 'react-router-dom';
 
 
 function Carousel() {
+    let nav = useNavigate()
     const settings = {
         infinite: true,
         dots: true,
@@ -25,22 +27,22 @@ function Carousel() {
 
     <div className="sliderContainer">
 
-        <div className="slide"  >
+        <div className="slide" onClick={()=>{nav('/location')}} >
         <img className="imgCarousel" src={okayamaLogo}   />
         <h1>Encuentra tu Dojo más cercano</h1>
         </div>
     </div>
     <div className="sliderContainer">
 
-        <div className="slide"  >
+        <div className="slide"  onClick={()=>{nav('/Conocenos')}}>
         <img className="imgCarousel" src={professorLeg}   />
-        <h1>Mira uno de Nuestros Entrenamientos</h1>
+        <h1>Miranos Entrenar</h1>
         </div>
     </div>
     <div className="sliderContainer">
 
         <div className="slide"  >
-        <img className="imgCarousel" src={cintaNegra}   />
+        <img className="imgCarousel" src={cintaNegra}  onClick={()=>{nav('/info')}} />
         <h1>¿Quién Puede Practicar Karate?</h1>
         </div>
     </div>

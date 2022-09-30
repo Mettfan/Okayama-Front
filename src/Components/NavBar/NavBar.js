@@ -40,7 +40,7 @@ function NavBar() {
                 <div className='pageTitle'>
                     {(location.pathname.split('/')[1] || 'Inicio').toUpperCase()}
                 </div>
-                <TeamOutstanding></TeamOutstanding>
+                {/* <TeamOutstanding></TeamOutstanding> */}
 
 
         </div>
