@@ -9,7 +9,7 @@ function SlidingMenu(props) {
             <NavLink className={'navLinkMenu'} to={'/'}>Inicio</NavLink>
             {/* <NavLink className={'navLinkMenu'} to={'/login'}>Inicia Sesión</NavLink> */}
             {/* <NavLink className={'navLinkMenu'} to={'/register'}>Regístrate</NavLink> */}
-            <NavLink className={'navLinkMenu'} to={'/Inscripcion'}>Inscripción</NavLink>
+            <NavLink className={'navLinkMenu'} to={'/location'}>Inscripción</NavLink>
             <NavLink className={'navLinkMenu'} to={'/Productos'}>Productos</NavLink>
             <NavLink className={'navLinkMenu'} to={'/Conocenos'}>Conócenos</NavLink>
 

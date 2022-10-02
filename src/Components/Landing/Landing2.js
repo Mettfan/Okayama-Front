@@ -85,12 +85,39 @@ function Landing2() {
             description = 'Trabajamos día con día para mejorar las habilidades de nuestro Staff y así usted pueda recibir el mejor entrenamiento mientras nosotros lo guíamos en su camino a Cinta Negra'
             />
         </div>
-        {/* <div className='extrasContainer'>
+        
+        <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                marginTop: '50px',
+                fontSize: 'xx-large',
+                fontFamily: 'Lucida Sans'
+
+            }} >
+                Conocenos más
+            </div>
+        <div className='extrasContainer'>
             <Extra
                 image={personKarate}
                 text = {'Dojos'}
             ></Extra>
-        </div> */}
+            <Extra
+                image={personKarate}
+                text = {'Entrenamiento'}
+            ></Extra>
+            <Extra
+                image={personKarate}
+                text = {'Instructores'}
+            ></Extra>
+            <Extra
+                image={personKarate}
+                text = {'Grados'}
+            ></Extra>
+            <Extra
+                image={personKarate}
+                text = {'Examen'}
+            ></Extra>
+        </div>
     
     </> );
 }

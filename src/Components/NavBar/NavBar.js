@@ -26,10 +26,10 @@ function NavBar() {
  
 
             <div className='navLinkContainer'>
-                <NavLink className={'navLink'} to={'/Conocenos'}>
-                    Conócenos
+                <NavLink className={'navLink'} to={'/'}>
+                    Inicio
                 </NavLink>
-                <NavLink className={'navLink'} to={'/Inscripcion'}>
+                <NavLink className={'navLink'} to={'/location'}>
                     Inscripción
                 </NavLink>
                 <NavLink className={'navLink'} to={'/Productos'}>

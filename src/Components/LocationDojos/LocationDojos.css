@@ -26,17 +26,42 @@
 }
 .dojosPage{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* justify-content: center;
     align-items: center; */
 }
 .infoDojos{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .infoColumn{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+.dojoLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pageLocationTitle{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.infoBottom{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.phraseBottom{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Handwriting' ;
 }
 @keyframes scaleUp {
     100%{

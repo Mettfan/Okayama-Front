@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'
 import './Plan.css'
 
 function Plan(props) {
+    let nav = useNavigate()
     return ( <>
     
         <div className='planContainer'>
@@ -20,7 +22,7 @@ function Plan(props) {
             <div className='planInfo'>
                 {props.info}
             </div>
-            <button className='planButton'>¡Inscríbase con Nosotros!</button>
+            <button onClick={()=>{nav('/location')}} className='planButton'>¡Inscríbase con Nosotros!</button>
         </div>
 
       

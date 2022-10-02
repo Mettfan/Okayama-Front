@@ -37,12 +37,15 @@ function LocationDojos() {
    ]
     
     return ( <>
+   <h1 className='pageLocationTitle'>
+      ¡Encuentra tu Dojo más cercano y visítanos!
+   </h1>
  <div className='dojosPage' >
    {dojos?.map && dojos.map( dojo => {
       return <div className='dojoCard'>
-      <div className='dojoName'>
+      <h2 className='dojoName'>
          {'Dojo de '+ dojo.name}
-      </div>
+      </h2>
       {/* <div >
          <img className='dojoImg' src={dojo.img}></img> 
       </div> */}
@@ -56,16 +59,10 @@ function LocationDojos() {
             ></img>
 
          </div>
-         <div className='infoColumn'>
-            <div>Phone</div>
-            <div>Email</div>
-            {/* <div></div> */}
-         </div>
+
       </div>
 
-      {/* <div className='dojoMembers'>
-         {dojo.members}
-      </div> */}
+
 
 
     </div>
@@ -76,6 +73,15 @@ function LocationDojos() {
 
    }
 </div>
+<h3 className='infoBottom'>
+   Realiza tu inscripción ahora mismo llamándonos al: 722 222 2222
+</h3>
+<h3 className='infoBottom'>
+   O mándanos un correo a: okayamakaratedo@okayama.com
+</h3>
+<h3 className='phraseBottom'>
+   'Nunca es tarde para aprender algo nuevo'
+</h3>
     
         
     
