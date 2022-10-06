@@ -4,6 +4,10 @@ import './Plan.css'
 
 function Plan(props) {
     let nav = useNavigate()
+    let goto = (url) => {
+        nav(url)
+        window.scrollTo(0, 0)
+    }
     return ( <>
     
         <div className='planContainer'>
@@ -22,7 +26,7 @@ function Plan(props) {
             <div className='planInfo'>
                 {props.info}
             </div>
-            <button onClick={()=>{nav('/location')}} className='planButton'>¡Inscríbase con Nosotros!</button>
+            <button onClick={()=>{goto('/location')}} className='planButton'>¡Inscríbase con Nosotros!</button>
         </div>
 
       

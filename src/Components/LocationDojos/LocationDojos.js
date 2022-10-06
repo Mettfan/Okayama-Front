@@ -8,7 +8,15 @@ function LocationDojos() {
          img: 'https://lh5.googleusercontent.com/p/AF1QipMa8uGsSp1YGWgu433Uav8ZIPMxkQNQ_uBwDYg4=w408-h725-k-no',
          sensei: '',
          staff: [],
-         members: []
+         members: [],
+         schedule: {
+            'Lunes': '4:50 - 7:50',
+            'Martes': '4:50 - 7:50',
+            'Miércoles': '4:50 - 7:50',
+            'Jueves': '4:50 - 7:50',
+            'Viernes': '4:50 - 6:50',
+            'Sábado': '4:50 - 7:50',
+         }
       },
       {
          name: 'San Antonio',
@@ -16,7 +24,15 @@ function LocationDojos() {
          img: '',
          sensei: '',
          staff: [],
-         members: []
+         members: [],
+         schedule: {
+            'Lunes': '4:30 - 7:20',
+            'Martes': '5:30 - 7:20',
+            'Miércoles': '4:30 - 7:20',
+            'Jueves': 'Cerrado',
+            'Viernes': '4:00 - 7:35',
+            'Sábado': '3:50 - 7:20',
+         }
       },
       {
          name: 'Mexicaltzingo',
@@ -24,7 +40,15 @@ function LocationDojos() {
          img: '',
          sensei: '',
          staff: [],
-         members: []
+         members: [],
+         schedule: {
+            'Lunes': '-',
+            'Martes': '-',
+            'Miércoles': '-',
+            'Jueves': '-',
+            'Viernes': '-',
+            'Sábado': '-',
+         }
       },
       {
          name: 'Zinacantepec',
@@ -32,7 +56,16 @@ function LocationDojos() {
          img: '',
          sensei: '',
          staff: [],
-         members: []
+         members: [],
+         schedule: {
+            'Lunes': '-',
+            'Martes': '-',
+            'Miércoles': '-',
+            'Jueves': '-',
+            'Viernes': '-',
+            'Sábado': '-',
+         }
+         
       }
    ]
     
@@ -57,6 +90,23 @@ function LocationDojos() {
             src='https://seeklogo.com/images/G/google-maps-2014-logo-6108508C7B-seeklogo.com.png' 
             onClick={() => {window.open(dojo.link, "_blank")}}
             ></img>
+            <h3>
+               Horarios
+            </h3>
+            <div className='scheduleContainer'>
+               {Object?.entries(dojo?.schedule).map( day => {
+                  return (<div className='dayScheduleContainer'>
+                     <div className='dayNameContainer'>
+                        {day[0] + ' '}
+                     </div>
+                     <div className='hourValueContainer'>
+                        {day[1]}
+                     </div>
+
+                  </div>)
+               } )}
+            </div>
+            
 
          </div>
 

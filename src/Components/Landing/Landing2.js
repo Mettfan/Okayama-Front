@@ -100,22 +100,27 @@ function Landing2() {
             <Extra
                 image={personKarate}
                 text = {'Dojos'}
-            ></Extra>
+                redirect= {'/location'}
+                ></Extra>
             <Extra
                 image={personKarate}
                 text = {'Entrenamiento'}
-            ></Extra>
+                redirect= {'/training'}
+                ></Extra>
             <Extra
                 image={personKarate}
                 text = {'Instructores'}
-            ></Extra>
+                redirect= {'/sensei'}
+                ></Extra>
             <Extra
                 image={personKarate}
                 text = {'Grados'}
-            ></Extra>
+                redirect= {'/grades'}
+                ></Extra>
             <Extra
                 image={personKarate}
                 text = {'Examen'}
+                redirect= {'/examination'}
             ></Extra>
         </div>
     
