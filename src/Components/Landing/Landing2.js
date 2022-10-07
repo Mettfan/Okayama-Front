@@ -5,7 +5,17 @@ import coverKarate from '../../Assets/coverKarate.jpg'
 import cintasKarate from '../../Assets/Cintas.jpg'
 import Plan from './Plan/Plan';
 import Cinta from './Cinta/Cinta';
-import cintaNegra from '../../Assets/cintapng.png'
+import primerKyu from '../../Assets/primerkyu.png'
+import segundoKyu from '../../Assets/segundokyu.png'
+import tercerKyu from '../../Assets/tercerkyu.png'
+import cuartoKyu from '../../Assets/cuartokyu.png'
+import quintoKyu from '../../Assets/quintokyu.png'
+import sextoKyu from '../../Assets/sextokyu.png'
+import septimoKyu from '../../Assets/septimokyu.png'
+import octavoKyu from '../../Assets/octavokyu.png'
+import novenoKyu from '../../Assets/cintapng.png'
+import decimoKyu from '../../Assets/decimokyu.png'
+import cintaNegra from '../../Assets/cintanegra.png'
 import Feature from './Feature/Feature';
 import Extra from './Extra/Extra';
 
@@ -57,16 +67,17 @@ function Landing2() {
             </div>
 
         <div className='gradesContainer'>
-            <Cinta kyu = '10' image={cintaNegra}  ></Cinta>
-            <Cinta kyu = '9' image={cintaNegra}  ></Cinta>
-            <Cinta kyu = '8' image={cintaNegra}  ></Cinta>
-            <Cinta kyu = '7' image={cintaNegra}  ></Cinta>
-            <Cinta kyu = '6' image={cintaNegra}  ></Cinta>
-            <Cinta kyu = '5' image={cintaNegra}  ></Cinta>
-            <Cinta kyu = '4' image={cintaNegra}  ></Cinta>
-            <Cinta kyu = '3' image={cintaNegra}  ></Cinta>
-            <Cinta kyu = '2' image={cintaNegra}  ></Cinta>
-            <Cinta kyu = '1' image={cintaNegra}  ></Cinta>
+            <Cinta kyu = '10' image={decimoKyu}  ></Cinta>
+            <Cinta kyu = '9' image={novenoKyu}  ></Cinta>
+            <Cinta kyu = '8' image={octavoKyu}  ></Cinta>
+            <Cinta kyu = '7' image={septimoKyu}  ></Cinta>
+            <Cinta kyu = '6' image={sextoKyu}  ></Cinta>
+            <Cinta kyu = '5' image={quintoKyu}  ></Cinta>
+            <Cinta kyu = '4' image={cuartoKyu}  ></Cinta>
+            <Cinta kyu = '3' image={tercerKyu}  ></Cinta>
+            <Cinta kyu = '2' image={segundoKyu}  ></Cinta>
+            <Cinta kyu = '1' image={primerKyu}  ></Cinta>
+            <Cinta dan = '1' image={cintaNegra}  ></Cinta>
         </div>
         <div className='featuresContainer'>
             <Feature 

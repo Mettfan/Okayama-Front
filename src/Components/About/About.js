@@ -10,11 +10,14 @@ function About() {
     let videoUrl = 'https://youtu.be/nxCSL1eFERU'
     
     return ( <>       
-        <AboutCard img={karateSun} text={'Okayama es una escuela de Artes Marciales enfocado en el Karate-Do'}/>
-        <video width={'100%'}  loop autoPlay muted controls>
-            <source type='video/mp4' src={videoOkayama}></source>
-        </video>
-        <AboutCard img={karateAge} text={'Personas de todas las edades integran Okayama'}/>
+        <div className='aboutVideoContainer' >
+            <video className='aboutVideo' loop autoPlay muted controls>
+                <source type='video/mp4' src={videoOkayama}></source>
+            </video>
+        </div>
+
+        <AboutCard img={karateSun} text={'Okayama es una escuela de Artes Marciales enfocado en el Karate-Do'} disposition = {'right'} />
+        <AboutCard img={karateAge} text={'Personas de todas las edades integran Okayama'} disposition={'left'}/>
 
 {/* 
         <div className='aboutContainer'>
