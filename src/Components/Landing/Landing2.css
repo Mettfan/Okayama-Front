@@ -30,4 +30,70 @@ align-items: center;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 30px;
+}
+.coverText{
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    left: 35%;
+    bottom: 500px;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.coverText:hover{
+    /* background-color: black;
+    color: white; */
+    animation-name: hoverText;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.coverText2{
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    left: 35%;
+    bottom: 550px;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.coverText2:hover{
+    /* background-color: black;
+    color: white; */
+    animation-name: hoverText;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+/* .divisor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 3px;
+    width: 90%;
+    border: 3px dashed black;
+    position: absolute;
+    top: 50px;
+} */
+@media (max-width: 920px) {
+    .coverText{
+        font-size: large;
+        bottom: 150px;
+    }
+    .coverText2{
+        font-size: large;
+        bottom: 150px;
+    }
+}
+@keyframes hoverText {
+
+    100%{
+        background-color: black;
+        color: white;
+    }
+    
 }

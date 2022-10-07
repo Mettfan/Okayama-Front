@@ -18,15 +18,29 @@ import decimoKyu from '../../Assets/decimokyu.png'
 import cintaNegra from '../../Assets/cintanegra.png'
 import Feature from './Feature/Feature';
 import Extra from './Extra/Extra';
+import { useNavigate } from 'react-router-dom';
 
 
 function Landing2() {
+    let nav = useNavigate()
     return ( <>
     
         <div className='coverContainerL2'>
             <img className='coverImgL2' src={coverKarate}/>
+            <h3 className='coverText' onClick={() => {nav('/Conocenos')}}>Conócenos</h3>
+            <h3 className='coverText2' onClick={() => {nav('/location')}}>Inscríbete</h3>
+            {/* <div className='divisor'></div> */}
         </div>
+        <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                marginTop: '-120px',
+                fontSize: 'xx-large',
+                fontFamily: 'Lucida Sans'
 
+            }} >
+                ¿Quién puede entrenar?
+            </div>
         <div className='plansContainerL2'>
             <Plan 
                 title = {'Pre-Karate'}
