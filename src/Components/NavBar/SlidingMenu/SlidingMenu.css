@@ -10,9 +10,10 @@
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
     top: 110px;
-    left: 0px;
+    right: 0px;
     padding: 5px;
     border: 1px solid darkblue;
+    z-index: 5;
 }
 .menuContainerfalse{
     display: flex;
@@ -26,7 +27,7 @@
     animation-fill-mode: forwards;
     animation-duration: 1s;
     top: 110px;
-    left: 0px;
+    right: 0px;
     padding: 5px;
 
 }
@@ -53,7 +54,7 @@
         opacity: 0;
     }
     100%{
-        transform: translate(-500px);
+        transform: translate(500px);
         
 
     }
@@ -61,7 +62,7 @@
 }
 @keyframes slideIn {
     0%{
-        transform: translate(-500px);
+        transform: translate(500px);
 
     }
     50%{

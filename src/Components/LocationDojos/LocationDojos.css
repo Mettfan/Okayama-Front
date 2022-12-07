@@ -23,6 +23,7 @@
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    z-index: 0;
 }
 .dojosPage{
     display: flex;

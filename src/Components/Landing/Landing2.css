@@ -37,7 +37,7 @@ align-items: center;
     padding: 10px;
     position: relative;
     left: 35%;
-    bottom: 500px;
+    bottom: 200px;
     font-size: xx-large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
@@ -55,7 +55,7 @@ align-items: center;
     padding: 10px;
     position: relative;
     left: 35%;
-    bottom: 550px;
+    bottom: 250px;
     font-size: xx-large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
@@ -79,15 +79,27 @@ align-items: center;
     position: absolute;
     top: 50px;
 } */
+.optionContainer{
+    animation-name: bounce ;
+}
 @media (max-width: 920px) {
     .coverText{
         font-size: large;
-        bottom: 150px;
+        bottom: 75px;
+        left: -150px;
     }
     .coverText2{
         font-size: large;
         bottom: 150px;
     }
+}
+@keyframes hoverText {
+
+    100%{
+        background-color: black;
+        color: white;
+    }
+    
 }
 @keyframes hoverText {
 

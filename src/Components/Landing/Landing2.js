@@ -27,8 +27,10 @@ function Landing2() {
     
         <div className='coverContainerL2'>
             <img className='coverImgL2' src={coverKarate}/>
-            <h3 className='coverText' onClick={() => {nav('/Conocenos')}}>Conócenos</h3>
-            <h3 className='coverText2' onClick={() => {nav('/location')}}>Inscríbete</h3>
+            {/* <div className='optionContainer'> */}
+                <h3 className='coverText' onClick={() => {nav('/Conocenos')}}>Conócenos</h3>
+                <h3 className='coverText2' onClick={() => {nav('/location')}}>Inscríbete</h3>
+            {/* </div> */}
             {/* <div className='divisor'></div> */}
         </div>
         <div style={{
