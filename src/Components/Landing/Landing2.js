@@ -19,7 +19,19 @@ import cintaNegra from '../../Assets/cintanegra.png'
 import Feature from './Feature/Feature';
 import Extra from './Extra/Extra';
 import { useNavigate } from 'react-router-dom';
-
+import karateBaby from '../../Assets/karateBaby.png'
+import karateKid from '../../Assets/karateKid.png'
+import karateTeen from '../../Assets/karateTeen.png'
+import karateAdult from '../../Assets/karateAdult.png'
+import desinfeccionPng from '../../Assets/desinfeccion.png'
+// import { AiOutlineSmile } from 'react-icons/ai'
+import friendlyEnvironment from '../../Assets/friendlyEnvironment.png'
+import karateInstructor from '../../Assets/karateInstructor.png'
+import dojosPng from '../../Assets/Dojos.png'
+import entrenamientoPng from '../../Assets/Entrenamiento.png'
+import examenPng from '../../Assets/Examen.png'
+import instructorPng from '../../Assets/Instructor.png'
+import karateBelt from '../../Assets/belts.png'
 
 function Landing2() {
     let nav = useNavigate()
@@ -46,25 +58,25 @@ function Landing2() {
         <div className='plansContainerL2'>
             <Plan 
                 title = {'Pre-Karate'}
-                image = {personKarate}
+                image = {karateBaby}
                 description = {'Si su hijo/a tiene 5 años o menos ¡Este es el grupo perfecto!. Una buena manera de iniciar a su hijo/a en el mundo del Karate-Do'}
                 info = {'Permita que nuestros Instructores altamente capacitados mejoren las habilidades Físicas y Cognitivas de su hijo/a con un entrenamiento especializado en pequeños Karatecas que van iniciando su camino en este Arte Marcial'}
             />
             <Plan 
                 title = {'Niños/as'}
-                image = {personKarate}
+                image = {karateKid}
                 description = {'Especializado en pequeños de desde los 6 años hasta los 12 años'}
                 info = {'No pierda la oportunidad de inscribir a su niño/a en nuestro grupo donde hay una mayor interacción con otros alumnos de diversos grados. Una actividad extraescolar que le permitirá desarrollar su disciplina y buenos hábitos de manera constante'}
             />
             <Plan 
                 title = {'Jóvenes'}
-                image = {personKarate}
+                image = {karateTeen}
                 description = {'No esperes más para integrarte a nuestro grupo de Karatecas, si tienes entre 13 y 20 años ¡Puedes llegar a ser un gran Cinta Negra!'}
                 info = {'Intégrese con nosotros y note un mejor desempeño en su condición física y mental. Se adaptará rápidamente a nuestros entrenamientos de la mano de nuestros Instructores altamente capacitados. ¡Si muestra un buen desempeño y carácter puede ser candidato a integrarse a nuestro equipo de Instructores!'}
             />
             <Plan 
                 title = {'Adultos'}
-                image = {personKarate}
+                image = {karateAdult}
                 description = {'¡Para personas que apuntan a lo alto! Para personas por encima de los 20 años'}
                 info = {'Sabemos la importancia de la disciplina en la vida diaria, por eso mismo estamos comprometidos a mostrarle el camino para ser una mejor persona a través de la filosofía y los entrenamientos de alto rendimiento que tenemos preparados para usted'}
             />
@@ -98,17 +110,17 @@ function Landing2() {
         <div className='featuresContainer'>
             <Feature 
             title = {'Desinfección Completa'}
-            image = {personKarate}
+            image = {desinfeccionPng}
             description = 'Contamos con Tapete Sanitizante y Gel Antibacterial. Desinfectamos nuestro material de entrenamiento para que usted o su hijo pueda entrenar sin preocupaciones'
             />
             <Feature 
             title = {'Ambiente Amigable y Seguro'}
-            image = {personKarate}
+            image = {friendlyEnvironment}
             description = 'Los alumnos interactuan y realizan ejercicios con otros alumnos de diversos grados. Siempre promovemos la disciplina y el respeto entre ellos'
             />
             <Feature 
             title = {'Instructores Capacitados'}
-            image = {personKarate}
+            image = {karateInstructor}
             description = 'Trabajamos día con día para mejorar las habilidades de nuestro Staff y así usted pueda recibir el mejor entrenamiento mientras nosotros lo guíamos en su camino a Cinta Negra'
             />
         </div>
@@ -125,27 +137,27 @@ function Landing2() {
             </div>
         <div className='extrasContainer'>
             <Extra
-                image={personKarate}
+                image={dojosPng}
                 text = {'Dojos'}
                 redirect= {'/location'}
                 ></Extra>
             <Extra
-                image={personKarate}
+                image={entrenamientoPng}
                 text = {'Entrenamiento'}
                 redirect= {'/training'}
                 ></Extra>
             <Extra
-                image={personKarate}
+                image={instructorPng}
                 text = {'Instructores'}
                 redirect= {'/sensei'}
                 ></Extra>
             <Extra
-                image={personKarate}
+                image={karateBelt}
                 text = {'Grados'}
                 redirect= {'/grades'}
                 ></Extra>
             <Extra
-                image={personKarate}
+                image={examenPng}
                 text = {'Examen'}
                 redirect= {'/examination'}
             ></Extra>

@@ -91,6 +91,8 @@ align-items: center;
     .coverText2{
         font-size: large;
         bottom: 150px;
+        left: 30%;
+
     }
 }
 @keyframes hoverText {

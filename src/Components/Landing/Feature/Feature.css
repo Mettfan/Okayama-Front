@@ -18,8 +18,14 @@
     align-items: center;
 }
 .featureImage{
-    width: 100%;
+    width: 50%;
 }
+.featureImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .featureDescription{
     display: flex;
     justify-content: center;

@@ -3,11 +3,20 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(223, 223, 27, 0.827);
+    background-color: rgb(233, 233, 12);
     padding: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 250px;
     margin: 5px;
+    filter: drop-shadow(5px 5px  gold);
+
+}
+.planImage{
+    background-color: gold;
+    padding: 10px;
+    border-radius: 50px;
+    /* border: 2px double black ; */
+    filter: drop-shadow(3px 3px orange);
 }
 .planTitle{
     font-size: xx-large;
