@@ -1,5 +1,8 @@
 import React from 'react';
 import './LocationDojos.css'
+import phonePng from '../../Assets/whitePhone.png'
+import mailPng from '../../Assets/mailPng.png'
+
 function LocationDojos() {
    let dojos = [
       {
@@ -9,6 +12,7 @@ function LocationDojos() {
          sensei: '',
          staff: [],
          members: [],
+         phone: '',
          schedule: {
             'Lunes': '4:50 - 7:50',
             'Martes': '4:50 - 7:50',
@@ -25,6 +29,7 @@ function LocationDojos() {
          sensei: '',
          staff: [],
          members: [],
+         phone: '',
          schedule: {
             'Lunes': '4:30 - 7:20',
             'Martes': '5:30 - 7:20',
@@ -41,6 +46,7 @@ function LocationDojos() {
          sensei: '',
          staff: [],
          members: [],
+         phone: '',
          schedule: {
             'Lunes': '-',
             'Martes': '-',
@@ -57,6 +63,7 @@ function LocationDojos() {
          sensei: '',
          staff: [],
          members: [],
+         phone: '',
          schedule: {
             'Lunes': '-',
             'Martes': '-',
@@ -68,7 +75,21 @@ function LocationDojos() {
          
       }
    ]
-    
+   let socialMedia = (name, imageUrl, gotoUrl, mail, phone) => {
+      return (<>
+          <a className='socialMediaContainer' href={ !phone ? !mail ? gotoUrl : 'mailto:' : 'tel:'+ gotoUrl } target="_blank" rel="noopener noreferrer" >
+  
+              <div className='socialMediaName' style={{'color':'black'}}>
+  
+                  {name || ''}
+  
+              </div>
+              <img className='socialMediaImage' src={ imageUrl }></img>
+  
+  
+          </a>
+      </>)
+  }
     return ( <>
    <h1 className='pageLocationTitle'>
       ¡Encuentra tu Dojo más cercano y visítanos!
@@ -85,11 +106,17 @@ function LocationDojos() {
       <div className='infoDojos'>
 
          <div className='dojoLink'>
-            <img
-            className='mapsLogo'
-            src='https://seeklogo.com/images/G/google-maps-2014-logo-6108508C7B-seeklogo.com.png' 
-            onClick={() => {window.open(dojo.link, "_blank")}}
-            ></img>
+            <div className='dojoContacts'>
+               {/* <img
+               className='mapsLogo'
+               src='https://seeklogo.com/images/G/google-maps-2014-logo-6108508C7B-seeklogo.com.png' 
+               onClick={() => {window.open(dojo.link, "_blank")}}
+               ></img> */}
+            {socialMedia('Ver en Maps', 'https://seeklogo.com/images/G/google-maps-2014-logo-6108508C7B-seeklogo.com.png', dojo.link )}
+            {socialMedia('Contacto', 'https://cdn-icons-png.flaticon.com/512/124/124034.png?w=360' , dojo.phone, false, true )}
+               
+
+            </div>
             <h3>
                Horarios
             </h3>
@@ -124,10 +151,7 @@ function LocationDojos() {
    }
 </div>
 <h3 className='infoBottom'>
-   Realiza tu inscripción ahora mismo llamándonos al: 722 222 2222
-</h3>
-<h3 className='infoBottom'>
-   O mándanos un correo a: okayamakaratedo@okayama.com
+   O mándanos un {socialMedia('Correo', mailPng , 'okayamavalledetoluca@hotmail.com', true )}
 </h3>
 <h3 className='phraseBottom'>
    'Nunca es tarde para aprender algo nuevo'
