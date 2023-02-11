@@ -2,6 +2,7 @@
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-top: 80px;
 }
 .coverImgL2{
     width: 100%;
@@ -10,7 +11,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 .gradesContainer{
 
@@ -82,6 +83,27 @@ align-items: center;
 .optionContainer{
     animation-name: bounce ;
 }
+.plansTitle{
+    /* background-color: red; */
+    color: black;
+    /* filter: drop-shadow(4px 4px 1px black); */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: 120px;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+.fading1{
+    /* background-color: black; */
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    /* background: linear-gradient(to bottom, #ffffff, #0a14d8 120%); */
+}
 @media (max-width: 920px) {
     .coverText{
         font-size: large;
@@ -93,6 +115,9 @@ align-items: center;
         bottom: 150px;
         left: 30%;
 
+    }
+    .plansContainerL2{
+        margin-top: -100px ;
     }
 }
 @keyframes hoverText {

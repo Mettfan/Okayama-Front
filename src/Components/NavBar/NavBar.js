@@ -21,6 +21,7 @@ function NavBar() {
         <div className='navContainerBg'>
 
             <div className='navContainer' >
+            <img className='navImageBackground' src='https://www.shutterstock.com/image-photo/power-260nw-78269956.jpg'></img>
                     {/* <img className='okayamaLogoInside' src={OkayamaLogo}/> */}
                     <SlidingMenu menuIsActive = {state.menuIsActive}></SlidingMenu>
                     <img onClick={()=>{toggleMenu()}} className='okayamaLogo' src={OkayamaLogo}/>
@@ -28,6 +29,7 @@ function NavBar() {
     
 
                 <div className='navLinkContainer'>
+                    
                     <NavLink className={'navLink'} to={'/'}>
                         Inicio
                     </NavLink>

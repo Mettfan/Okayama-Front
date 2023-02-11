@@ -36,7 +36,8 @@ import karateBelt from '../../Assets/belts.png'
 function Landing2() {
     let nav = useNavigate()
     return ( <>
-    
+
+        <div className='fading1'></div>
         <div className='coverContainerL2'>
             <img className='coverImgL2' src={coverKarate}/>
             {/* <div className='optionContainer'> */}
@@ -45,14 +46,7 @@ function Landing2() {
             {/* </div> */}
             {/* <div className='divisor'></div> */}
         </div>
-        <div style={{
-                display: 'flex',
-                justifyContent: 'center',
-                marginTop: '-120px',
-                fontSize: 'xx-large',
-                fontFamily: 'Lucida Sans'
-
-            }} >
+        <div className='plansTitle'  >
                 ¿Quién puede entrenar?
             </div>
         <div className='plansContainerL2'>
