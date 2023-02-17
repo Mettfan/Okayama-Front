@@ -15,6 +15,7 @@ import TeamOutstandingLanding from './Components/TeamOutstandingLanding/TeamOuts
 import UncompletePage from './Components/UncompletePage/UncompletePage';
 import Admin from './Components/Admin/Admin';
 import Landing2 from './Components/Landing/Landing2';
+import Grades from './Components/Grades/Grades';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/location' element={<LocationDojos/>} />
         <Route path='/teamOutStanding' element={<TeamOutstandingLanding/>} />
         <Route path='/admin' element={<Admin/>} />
+        {/* <Route path='/grades' element={<Grades/>} /> */}
         <Route path='*' exact={true} element={<UncompletePage></UncompletePage>}></Route>
 
       </Routes>

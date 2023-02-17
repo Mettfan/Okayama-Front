@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(233, 233, 12);
+    background-color: rgb(219, 219, 51);
     padding: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 250px;
@@ -12,11 +12,11 @@
 
 }
 .planImage{
-    background-color: gold;
+    background-color: rgb(205, 181, 47);
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 20px;
     /* border: 2px double black ; */
-    filter: drop-shadow(3px 3px orange);
+    /* filter: drop-shadow(3px 3px orange); */
 }
 .planTitle{
     font-size: xx-large;

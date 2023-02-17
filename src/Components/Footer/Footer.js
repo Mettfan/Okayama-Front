@@ -24,10 +24,16 @@ function Footer() {
     return ( <>
 
         <div className='footerContainer'>
-            {socialMedia('Facebook', fbLogo , 'https://www.facebook.com/people/Okayama-Valle-de-Toluca/100028422446883/' )}
-            {socialMedia('Instagram', instaLogo , 'https://www.instagram.com/okayama_karatedo/?igshid=YmMyMTA2M2Y%3D' )}
-            {socialMedia('Correo', mailPng , 'okayamavalledetoluca@hotmail.com', true )}
-            {socialMedia('Contacto', phonePng , '7221076933', false, true )}
+            <div className = {'socialMediasContainer'}>
+                {socialMedia('Facebook', fbLogo , 'https://www.facebook.com/people/Okayama-Valle-de-Toluca/100028422446883/' )}
+                {socialMedia('Instagram', instaLogo , 'https://www.instagram.com/okayama_karatedo/?igshid=YmMyMTA2M2Y%3D' )}
+                {socialMedia('Correo', mailPng , 'okayamavalledetoluca@hotmail.com', true )}
+                {socialMedia('Contacto', phonePng , '7221076933', false, true )}
+
+            </div>
+            <div className='credits'>
+                Desarrollado por: Cesar Yannick Fullstack Dev
+            </div>
         </div>
 
     </>  );

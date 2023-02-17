@@ -29,9 +29,9 @@
 .navContainer{
     width: 100%;
     height: 70px;
-    /* display: flex;
+    display: flex;
     justify-content: flex-start;
-    align-items: center; */
+    align-items: center;
     background-color: rgb(11, 11, 111);
     position: fixed;
     top: 0;
@@ -49,14 +49,14 @@
     align-items: center; */
     font-size: medium;
     color: white;
-    background-color: darkblue;
+    background-color: rgba(0, 0, 139, 0.713);
     letter-spacing: 2px;
     font-weight: 600;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    margin-right: 5%;
+    /* margin-right: 5%; */
     z-index: 1;
-    /* padding: 20px; */
+    padding: 20px;
     /* padding-top: 5; */
 }
 .navLink.active{
@@ -113,7 +113,7 @@
         visibility:visible;
         position: absolute;
         background-color: rgb(11, 11, 111);
-        padding: 5px;
+        padding: 10px;
         left: 10%;
         top: 20px;
         font-size: medium;
