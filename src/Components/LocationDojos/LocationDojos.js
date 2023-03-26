@@ -112,8 +112,8 @@ function LocationDojos() {
                src='https://seeklogo.com/images/G/google-maps-2014-logo-6108508C7B-seeklogo.com.png' 
                onClick={() => {window.open(dojo.link, "_blank")}}
                ></img> */}
-            {socialMedia('Ver en Maps', 'https://seeklogo.com/images/G/google-maps-2014-logo-6108508C7B-seeklogo.com.png', dojo.link )}
-            {socialMedia('Contacto', 'https://cdn-icons-png.flaticon.com/512/124/124034.png?w=360' , dojo.phone, false, true )}
+            { dojo.link && socialMedia('Ver en Maps', 'https://seeklogo.com/images/G/google-maps-2014-logo-6108508C7B-seeklogo.com.png', dojo.link )}
+            { dojo.phone && socialMedia('Contacto', 'https://cdn-icons-png.flaticon.com/512/124/124034.png?w=360' , dojo.phone, false, true )}
                
 
             </div>

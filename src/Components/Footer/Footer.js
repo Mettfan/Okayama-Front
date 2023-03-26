@@ -7,7 +7,7 @@ import phonePng from '../../Assets/whitePhone.png'
 function Footer() {
     let socialMedia = (name, imageUrl, gotoUrl, mail, phone) => {
         return (<>
-            <a className='socialMediaContainer' href={ !phone ? !mail ? gotoUrl : 'mailto:' : 'tel:'+ gotoUrl } target="_blank" rel="noopener noreferrer" >
+            <a className='socialMediaContainer' href={ !phone ? !mail ? gotoUrl : 'mailto:' : 'tel:'+ gotoUrl } target="_blank"  >
     
                 <div className='socialMediaName'>
     
@@ -25,10 +25,10 @@ function Footer() {
 
         <div className='footerContainer'>
             <div className = {'socialMediasContainer'}>
-                {socialMedia('Facebook', fbLogo , 'https://www.facebook.com/people/Okayama-Valle-de-Toluca/100028422446883/' )}
-                {socialMedia('Instagram', instaLogo , 'https://www.instagram.com/okayama_karatedo/?igshid=YmMyMTA2M2Y%3D' )}
-                {socialMedia('Correo', mailPng , 'okayamavalledetoluca@hotmail.com', true )}
-                {socialMedia('Contacto', phonePng , '7221076933', false, true )}
+                {fbLogo && socialMedia('Facebook', fbLogo , 'https://www.facebook.com/people/Okayama-Valle-de-Toluca/100028422446883/' )}
+                {instaLogo && socialMedia('Instagram', instaLogo , 'https://www.instagram.com/okayama_karatedo/?igshid=YmMyMTA2M2Y%3D' )}
+                {mailPng && socialMedia('Correo', mailPng , 'okayamavalledetoluca@hotmail.com', true )}
+                {phonePng && socialMedia('Contacto', phonePng , '7221076933', false, true )}
 
             </div>
             <div className='credits'>
