@@ -27,8 +27,8 @@ function Footer() {
             <div className = {'socialMediasContainer'}>
                 {fbLogo && socialMedia('Facebook', fbLogo , 'https://www.facebook.com/people/Okayama-Valle-de-Toluca/100028422446883/' )}
                 {instaLogo && socialMedia('Instagram', instaLogo , 'https://www.instagram.com/okayama_karatedo/?igshid=YmMyMTA2M2Y%3D' )}
-                {mailPng && socialMedia('Correo', mailPng , 'okayamavalledetoluca@hotmail.com', true )}
-                {phonePng && socialMedia('Contacto', phonePng , '7221076933', false, true )}
+                {mailPng && socialMedia('Correo', mailPng , ' ', true )}
+                {phonePng && socialMedia('Contacto', phonePng , ' ', false, true )}
 
             </div>
             <div className='credits'>

@@ -7,7 +7,7 @@ function LocationDojos() {
    let dojos = [
       {
          name: 'San Andres',
-         link: 'https://goo.gl/maps/EojSJgJFwhepPsDc7',
+         // link: 'https://goo.gl/maps/EojSJgJFwhepPsDc7',
          img: 'https://lh5.googleusercontent.com/p/AF1QipMa8uGsSp1YGWgu433Uav8ZIPMxkQNQ_uBwDYg4=w408-h725-k-no',
          sensei: '',
          staff: [],
@@ -24,7 +24,7 @@ function LocationDojos() {
       },
       {
          name: 'San Antonio',
-         link: 'https://goo.gl/maps/Y442ZJvBVvWnHmDEA',
+         // link: 'https://goo.gl/maps/Y442ZJvBVvWnHmDEA',
          img: '',
          sensei: '',
          staff: [],
