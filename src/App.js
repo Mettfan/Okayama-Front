@@ -1,43 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
-import { Route, Routes } from 'react-router-dom'
-import Landing from './Components/Landing/Landing';
-import NavBar from './Components/NavBar/NavBar';
-import Footer from './Components/Footer/Footer';
-import About from './Components/About/About';
-import Login from './Components/Login/Login';
-import Register from './Components/Register/Register';
-import Products from './Components/Productos/Products';
-import Inscription from './Components/Inscripcion/Inscription';
-import LocationDojos from './Components/LocationDojos/LocationDojos';
-import TeamOutstanding from './Components/NavBar/TeamOutstanding.js/TeamOutstanding';
-import TeamOutstandingLanding from './Components/TeamOutstandingLanding/TeamOutstandingLanding.js';
-import UncompletePage from './Components/UncompletePage/UncompletePage';
-import Admin from './Components/Admin/Admin';
-import Landing2 from './Components/Landing/Landing2';
-import Grades from './Components/Grades/Grades';
+import { Route, Routes } from 'react-router-dom';
+import Landing from './Componentes/Rutas/Landing/Landing';
+import Nav from './Componentes/Nav/Nav';
+import Catalogo from './Componentes/Rutas/Catalogo/Catalogo';
+import Dojos from './Componentes/Rutas/Dojos/Dojos';
+import Login from './Componentes/Rutas/Login/Login';
+import Register from './Componentes/Rutas/Register/Register';
+import Footer from './Componentes/Tools/Footer/Footer';
+import UserDetail from './Componentes/Rutas/UserDetail/UserDetail';
 
 function App() {
-  return (
+  return (<>
     <div className="App">
-      
-      <NavBar/>
-      <Routes>
-        <Route path='/' element={<Landing2/>} />
-        <Route path='/Conocenos' element={<About/>} />
-        <Route path='/Productos' element={<Products/>} />
-        <Route path='/Inscripcion' element={<Inscription/>} />
-        {/* <Route path='/login' element={<Login/>} />  */}
-        {/* <Route path='/register' element={<Register/>} /> */}
-        <Route path='/location' element={<LocationDojos/>} />
-        <Route path='/teamOutStanding' element={<TeamOutstandingLanding/>} />
-        <Route path='/admin' element={<Admin/>} />
-        {/* <Route path='/grades' element={<Grades/>} /> */}
-        <Route path='*' exact={true} element={<UncompletePage></UncompletePage>}></Route>
+        <Nav />
+       <Routes>
+        <Route path='/' element={<Landing></Landing>} />
+        <Route path='/productos' element={<Catalogo></Catalogo>} />
+        <Route path='/dojos' element={<Dojos></Dojos>} />
 
+        <Route path='/login' element={<Login></Login>} />
+        <Route path='/register' element={<Register></Register>} />
+        
+        <Route path='/user/:id' element={<UserDetail></UserDetail>} />
+        
       </Routes>
-      <Footer/>
+        <Footer></Footer>
     </div>
+  
+  
+  </>
   );
 }
 

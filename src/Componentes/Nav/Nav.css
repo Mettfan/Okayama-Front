@@ -1,0 +1,48 @@
+.navContainer{
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    z-index: 0;
+}
+.navLink{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    
+}
+.navLink.active{
+    color: black;
+    /* filter: drop-shadow(2px 2px 1px blue); */
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 10px;
+    background-color: whitesmoke
+}
+.navLink:hover{
+    color: rgb(109, 109, 243);
+    /* filter: drop-shadow(1px 1px 1px yellow); */
+}
+.navLink.active:hover{
+    color: blue;
+    /* filter: drop-shadow(2px 2px 1px yellow); */
+}
+
+.navLinks{
+    justify-content: space-between;
+
+
+}
+
+.navLogo{
+    cursor: pointer;
+    position: relative;
+    height: 15px;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: scale(5, 5);
+    z-index: 3;
+}
