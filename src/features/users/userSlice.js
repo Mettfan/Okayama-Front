@@ -87,6 +87,21 @@ export const userSlice = createSlice({
             state.error = action.error.message
             state.response = null
         })
+        ////////////////////////////
+        builder.addCase(editUser.pending, state => {
+            state.loading = true
+        })
+        builder.addCase(editUser.fulfilled, (state, action) => {
+            state.loading = false
+            state.response = action.payload
+            state.error = ''
+        })
+        builder.addCase(editUser.rejected, (state, action) => {
+            state.loading = false
+            state.error = action.error.message
+            state.response = null
+        })
+        //////////////////////////
 
 
 
@@ -115,6 +130,15 @@ const editProduct = createAsyncThunk('products/editProduct', ({id, findBy, infoU
     })
     .then( response => response.data)
 })
+const editUser = createAsyncThunk('users/editUser', ({id, findBy, infoUpdated}) => {
+    // console.log(value);
+    return axios.put(`https://branquice.onrender.com/users`, {
+        id,
+        findBy,
+        infoUpdated
+    })
+    .then( response => response.data)
+})
 export const { 
     setCounter
 
@@ -123,4 +147,5 @@ export const {
 export const createOneUser = createUser
 export const fetchOneUser = fetchUser //
 export const fetchAllUsers = fetchUsers //
+export const editOneUser = editUser
 export const editOneProduct = editProduct

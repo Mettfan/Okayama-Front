@@ -5,9 +5,12 @@ import { createOneUser } from '../../../features/users/userSlice';
 import './Register.css'
 import UserCard from '../../Tools/UserCard/UserCard';
 import karateInstructor from '../../../Assets/karateInstructor.png';
+import Cookies from 'universal-cookie';
 function Register() {
     let dispatch = useDispatch()
     let nav = useNavigate()
+    let cookie = new Cookies()
+    let currentUser = cookie.get('user')
     let [user, setUser] = useState({
         name: '',
         age: null,
@@ -31,7 +34,7 @@ function Register() {
         })
     }
     return ( <>
-        <div className='registerContainer'>
+        {!currentUser?.disabled ? <div className='registerContainer'>
             
             <form className='formContainer' onSubmit={(e)=>{handleRegisterSubmit(e)}}>
             <h1>Regístrate</h1>
@@ -67,7 +70,11 @@ function Register() {
 
             </div>
 
-        </div>
+        </div>: <div className='validatingContainer'>
+                
+                <h1>Se están validando sus datos por un administrador...</h1>
+            
+            </div>}
     
     
     </> );

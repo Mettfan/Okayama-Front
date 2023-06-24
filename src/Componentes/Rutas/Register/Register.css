@@ -40,6 +40,13 @@
     color: black;
     
 }
+.validatingContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+}
 @media (max-width: 600px ) {
     .registerContainer{
         flex-direction: row;

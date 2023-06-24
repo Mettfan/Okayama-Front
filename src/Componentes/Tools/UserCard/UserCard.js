@@ -20,6 +20,8 @@ function UserCard({user}) {
             <h4>{user?.privileges}</h4>
             <img className='userCardImage' src={user?.image}></img>
             <h4>{user?.age}</h4>
+            {JSON.stringify(user?.disabled)}
+            <h4 style={{backgroundColor: user?.disabled === true ?'red':'green'}} >-</h4>
             {(user?.kyu && user?.dan) ? <Cinta kyu = {user?.kyu || null} dan = {user?.dan || null} image = {cintasList[Number(user?.kyu) ] || cintasList[0]}></Cinta>: 'Sin Nivel'}
         </div>
     

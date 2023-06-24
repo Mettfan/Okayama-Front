@@ -1,5 +1,13 @@
 .userCardsContainer{
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.userCardContainerParent{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
     flex-wrap: wrap;
     justify-content: center;
 }
